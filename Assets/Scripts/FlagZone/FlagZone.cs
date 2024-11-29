@@ -9,7 +9,7 @@ public class FlagZone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.transform.root.GetComponent<Character>() != null)
+        if (other.transform.parent.GetComponent<Character>() != null)
         {
             for (int i = 0; i < animators.Length; i++)
             {

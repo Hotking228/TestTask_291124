@@ -6,6 +6,7 @@ using UnityEngine;
 public class Collectible : MonoBehaviour
 {
     [SerializeField] private int changeMoney = 10;
+    [SerializeField] private ImpactEffect effect;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -14,7 +15,8 @@ public class Collectible : MonoBehaviour
         if (bag != null)
         {
             bag.ChangeMoney(changeMoney);
-            Destroy(gameObject);
+            Destroy(gameObject.transform.parent.gameObject);
+            Instantiate(effect, transform.position, Quaternion.identity);
         }
     }
 
