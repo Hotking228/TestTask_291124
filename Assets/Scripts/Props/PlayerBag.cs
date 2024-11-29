@@ -14,6 +14,8 @@ public class PlayerBag : MonoBehaviour
     [SerializeField] private int money;
     [SerializeField] private Image image;
     [SerializeField] private TextMeshProUGUI moneyAmount;
+    [SerializeField] private CharacterController characterController;
+    
     public int Money => money;
 
     public UnityEvent OnMoneyChange;
@@ -28,8 +30,11 @@ public class PlayerBag : MonoBehaviour
     {
         
         money += change;
-        if(money < 0)
+        if (money < 0)
+        {
             money = 0;
+            characterController.SetGameEnd(false);
+        }
 
         float fillAmount = ((float)money / (float)maxMoney);
         if(fillAmount > 1)
