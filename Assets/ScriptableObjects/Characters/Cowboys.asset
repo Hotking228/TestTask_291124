@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c39952fae09fa4c8413361cbda7e62, type: 3}
+  m_Name: Cowboys
+  m_EditorClassIdentifier: 
+  characters:
+  - {fileID: 4217412330102981976, guid: eb2ba7fd9e99140428e3c885c3f6e671, type: 3}
+  - {fileID: 5830430926477115653, guid: 40ee4340bd52d12429516f1d2b0c061e, type: 3}
+  - {fileID: 6145815326473484044, guid: 63a76b6ad74057d40847a753d524e72d, type: 3}
+  - {fileID: 9002459009767962935, guid: f1ef7160f393e94458eaa9d46d5b2afc, type: 3}
